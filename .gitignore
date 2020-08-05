@@ -1,1 +1,4 @@
+*.pyo
+*.pyc
+__pycache__/
 credentials.py
