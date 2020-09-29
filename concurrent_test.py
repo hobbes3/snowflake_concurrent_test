@@ -40,6 +40,7 @@ def run_searches(username, password):
         schema="TPCDS_SF10TCL",
     )
     user_cursor = user_conn.cursor()
+    user_cursor.execute("set USE_CACHED_RESULT = false")
 
     #print(user_cursor.execute("select current_role(), current_warehouse(), current_database(), current_schema()").fetchall()[0])
 
